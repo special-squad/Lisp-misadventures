@@ -25,3 +25,4 @@
   (format t "How much do you value the first good relative to the second good?")
   (terpri)
   (setq utility (read)))
+;This is an incomplete version of my C++ indifference program.
