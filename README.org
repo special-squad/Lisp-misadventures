@@ -1,0 +1,2 @@
+* Lisp misadventures
+This repo is to document the "programs" I make in Lisp.
