@@ -24,5 +24,16 @@
   (setq budget (read))
   (format t "How much do you value the first good relative to the second good?")
   (terpri)
-  (setq utility (read)))
-;This is an incomplete version of my C++ indifference program.
+  (setq utility (read))
+  (setq final1 (/ (* utility budget) (* (+ utility 1) price1)))
+  (setq final2 (/ budget (* (+ utility 1) price2)))
+  (format t "After running the math, the ammount of ~a you should buy is ~a and ~a of ~a ." good1 final1 final2 good2)
+  (terpri)
+  (format t "To model as an equation, it is modeled using (utility * ln(~a)) + ln(~a) = U = ~a ." final1 final2 (+ (* utility (log final1)) (log final2)))
+  (terpri)
+  (format t "For the actual curve, it's ~a * ln(x) + ln(y) = ~a ." utility (+ (* utility (log final1)) (log final2)))
+  (terpri)
+  (format t "For a tangent budget line, the model is ~a - ( ~a * x) / ~a" (/ budget price2 ) price1 price2)
+  (terpri)
+  (format t "To finish with a disclaimer, the comparisons this program can do are only cardinal, which is wrong but easier to make. Also values are not rounded because I'm lazy and these values can work for crypto"))
+;This is a better version of my C++ indifference program.
