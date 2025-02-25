@@ -35,5 +35,6 @@
   (terpri)
   (format t "For a tangent budget line, the model is ~a - ( ~a * x) / ~a" (/ budget price2 ) price1 price2)
   (terpri)
-  (format t "To finish with a disclaimer, the comparisons this program can do are only cardinal, which is wrong, they are ordinal but easier to make. Also values are not rounded because I'm lazy and these values can work for crypto"))
+  (format t "To finish with a disclaimer, the comparisons this program can do are only cardinal, which is wrong, they are ordinal but easier to make. Also values are not rounded because I'm lazy and these values can work for stuff like crypto and fluids"))
+(indifference)
 ;This is a slightly better version of my C++ indifference program.
